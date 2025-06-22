@@ -31,3 +31,15 @@ const productdetail = [
 }]
 const totalamount = productdetail.reduce((acc, curr) => acc + curr.amount ,0)
 console.log(totalamount);
+
+
+//adding sum of all product by first converting it into array
+
+let product1 = 100
+let product2 = 500 
+let product3 = 400
+let product4 = 600
+const totalarray = Array.of(product1,product2,product3,product4);
+console.log(totalarray);
+const totalAmount = totalarray.reduce((acc , curr) => acc + curr , 0)
+console.log(totalAmount);
